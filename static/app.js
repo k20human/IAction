@@ -188,7 +188,7 @@ class IActionApp {
                 },
                 body: JSON.stringify(
                     captureMode === 'rtsp'
-                        ? { source: rtspUrl, type: 'rtsp', rtsp_url: rtspUrl }
+                        ? { source: 'rtsp_0', type: 'rtsp', rtsp_url: rtspUrl }
                         : { type: 'ha_polling' }
                 )
             });
